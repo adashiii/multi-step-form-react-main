@@ -1,0 +1,282 @@
+.App {
+  /* background-color: blue; */
+  background-image: url("./components/nablasol-bi-1.jpg");
+  height: 100vh;
+  background-color: tomato;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.outer-footer {
+  /* border: 2px solid magenta; */
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  /* flex: 20%; */
+  display: flex;
+  display: inline-block;
+  /* justify-content: center; */
+  width: 70vw;
+  /* border: 2px solid tomato; */
+}
+
+
+.footer-back-to-login-button {
+  background-color: transparent;
+  /* width: 200px;   */
+  /* float: left; */
+  /* display: flex; */
+  /* padding: 10px 5px; */
+  width: fit-content;
+  height: 30px;
+  display: inline-block;
+  color: blue;
+  align-items: center;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  margin: 5px 0px 5px 0px;
+}
+
+.footer-next-button {
+  width: 200px;
+  height: 30px;
+  background-color: #3847f0;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 5px;
+  float: right;
+}
+
+
+.header-create-new-account-outer-div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid magenta; */
+}
+
+
+.header-create-new-account {
+
+  /* border: 2px solid tomato; */
+  text-align: center;
+  display: flex;
+  display: inline-block;
+  width: 70vw;
+  margin-top: 55px;
+}
+
+
+.header-create-new-account-h2 {
+  /* display: flex; */
+  /* float: left; */
+  display: inline;
+  /* text-align: center; */
+  size: 25px;
+  color: white;
+  /* margin-left: 150px; */
+
+}
+
+.header-create-new-account-button {
+  display: flex;
+  margin: 5px;
+  margin-right: 10px;
+  float: right;
+  /* background-color: blue; */
+  color: white;
+  background-color: Transparent;
+
+  border: none;
+}
+
+.navigation-status-bar {
+  /* border: 2px solid tomato; */
+  border-radius: 15px 15px 0px 0px;
+  height: 40px;
+  margin-bottom: 30px;
+  background-color: #eeeffe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-status-bar-div1-BI{
+  border-radius: 15px 0px 0px 0px;
+  width: 33.33%;
+  height: 40px;
+  background-color: #76B5FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-status-bar-div2-BI{
+  /* border-radius: 15px 0px 0px 0px; */
+  border-radius: 0px 30px 30px 0px;
+  width: 33.33%;
+  height: 40px;
+  background-color: #76B5FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-status-bar-div3-BI{
+  /* border-radius: 15px 0px 0px 0px; */
+  width: 33.33%;
+  height: 40px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-status-bar-div1 {
+  /* border: 2px solid yellow; */
+  border-radius: 15px 30px 30px 0px;
+  width: 33.33%;
+  height: 40px;
+  background-color: #76B5FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navigation-status-bar-div2 {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-status-bar-div3 {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-general-information{
+  color: #76B5FC;
+  
+
+}
+
+.your-profile-inner-div {
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 390px;
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.your-profile-h1 {
+  display: inline;
+}
+
+
+
+.your-profile-outer-div {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.input-tag-signup {
+  /* padding: 15px; */
+  padding: 1px;
+  padding-left: 15px;
+  margin-top: 5px;
+  /* width:fit-content */
+
+
+
+}
+
+.div-signup-name {
+  /* display: block; */
+  float: left;
+  display: flex;
+  flex-direction: column;
+  /* margin: 30px; */
+}
+
+.div-signup-lname {
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.fname-lname-outer-div-signup {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid magenta; */
+
+}
+.fname-lname-outer-div-signup-duplicate {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid magenta; */
+  height: fit-content;
+
+}
+
+.fname-lname-div-signup-duplicate {
+  /* display: flex;
+  justify-content: center;
+  border: 2px solid tomato;
+  height: 80px; */
+  box-sizing: border-box;
+  overflow: auto;
+  /* border: 2px solid red; */
+  width: 500px;
+  height:inherit;
+
+}
+
+.fname-lname-div-signup-GI{
+  display: flex;
+  /* justify-content: center; */
+}
+
+.fname-lname-div-signup {
+  box-sizing: border-box;
+  overflow: auto;
+  /* border: 2px solid red; */
+  width: 500px;
+  height: 50px;
+
+}
+
+
+.sign-up-container {
+  /* border: 2px solid red; */
+  width: fit-content;
+  width: 70vw;
+  height: 450px;
+  /* padding-top: 85px; */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 10px 3px #DAE0EB;
+
+
+}
+
+.sign-up-outer-container {
+  /* border: 2px solid tomato; */
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+
+}
