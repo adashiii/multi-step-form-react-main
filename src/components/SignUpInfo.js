@@ -5,10 +5,6 @@ function SignUpInfo({ formData, setFormData }) {
   return (
     <div className="sign-up-outer-container">
       <div className="sign-up-container">
-
-
-
-
         <div className="navigation-status-bar">
           <div className="navigation-status-bar-div1"> Your Profile</div>
           <div className="navigation-status-bar-div2">
@@ -31,12 +27,9 @@ function SignUpInfo({ formData, setFormData }) {
           </div>
         </div>
 
-
         {/* onFormSubmitHandler() {
           alert(`this page data is saved`)
         } */}
-
-
 
         {/* <form onSubmit={this.onFormSubmitHandler}>  */}
         <form>
@@ -72,15 +65,12 @@ function SignUpInfo({ formData, setFormData }) {
             </div>
           </div>
 
-
-
-
           <div className="fname-lname-outer-div-signup">
             <div className="fname-lname-div-signup">
               <div className="div-signup-name">
                 <label>Email*</label>
                 <input
-                  type="text"
+                  type="email"
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input Your Email"
@@ -89,11 +79,12 @@ function SignUpInfo({ formData, setFormData }) {
                     setFormData({ ...formData, email: event.target.value })
                   }
                 />
+               
               </div>
               <div className="div-signup-lname">
                 <label>Phone Number*</label>
                 <input
-                  type="text"
+                  type="tel"
                   size="28"
                   pattern="[0-9]{10}"
                   className="input-tag-signup"
@@ -107,15 +98,12 @@ function SignUpInfo({ formData, setFormData }) {
             </div>
           </div>
 
-
-          
-
           <div className="fname-lname-outer-div-signup">
             <div className="fname-lname-div-signup">
               <div className="div-signup-name">
                 <label>Password*</label>
                 <input
-                  type="text"
+                  type="password"
                   size="28"
                   className="input-tag-signup"
                   placeholder="Create Password"
@@ -128,7 +116,7 @@ function SignUpInfo({ formData, setFormData }) {
               <div className="div-signup-lname">
                 <label>Confirm Password*</label>
                 <input
-                  type="text"
+                  type="password"
                   size="28"
                   className="input-tag-signup"
                   placeholder="Confirm Your Password"
@@ -145,12 +133,7 @@ function SignUpInfo({ formData, setFormData }) {
           </div>
         </form>
 
-
-
-
-
-
-                  {/* <Form onFormYRSubmitHandler={this.onFormSubmitHandler} */}
+        {/* <Form onFormYRSubmitHandler={this.onFormSubmitHandler} */}
       </div>
     </div>
   );

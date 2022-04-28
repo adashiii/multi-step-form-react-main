@@ -23,12 +23,12 @@ function PersonalInfo({ formData, setFormData }) {
           </div>
         </div>
 
-
         <form>
           <div className="fname-lname-outer-div-signup-duplicate">
-
             <div className="fname-lname-div-signup-duplicate">
-        <div className="div-general-information" >GENERAL INFORMATION </div>
+              <div className="div-general-information">
+                GENERAL INFORMATION{" "}
+              </div>
               <div className="div-signup-name">
                 <label>Brand Name*</label>
                 <input
@@ -36,25 +36,27 @@ function PersonalInfo({ formData, setFormData }) {
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input Your Brand Name"
-                  value={formData.firstName}
+                  value={formData.brandName}
                   onChange={(e) => {
-                    setFormData({ ...formData, firstName: e.target.value });
+                    setFormData({ ...formData, brandName: e.target.value });
                   }}
                 />
               </div>
 
               <div className="div-signup-lname">
                 <label>Brand Type*</label>
-                <input
-                  type="text"
-                  size="28"
-                  className="input-tag-signup"
-                  placeholder="Select Brand Type"
-                  value={formData.lastName}
+
+                <select
+                  className="input-tag-signup-select"
+                  value={formData.brandtype}
                   onChange={(e) => {
-                    setFormData({ ...formData, lastName: e.target.value });
+                    setFormData({ ...formData, brandtype: e.target.value });
                   }}
-                />
+                >
+                  <option value="selectvalue">Select Type of Your Brand</option>
+                  <option value="local">Local </option>
+                  <option value="national">National</option>
+                </select>
               </div>
             </div>
           </div>
@@ -68,9 +70,9 @@ function PersonalInfo({ formData, setFormData }) {
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input Your Street Address"
-                  value={formData.username}
+                  value={formData.streetaddress}
                   onChange={(e) => {
-                    setFormData({ ...formData, username: e.target.value });
+                    setFormData({ ...formData, streetaddress: e.target.value });
                   }}
                 />
               </div>
@@ -81,9 +83,9 @@ function PersonalInfo({ formData, setFormData }) {
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input City"
-                  value={formData.username}
+                  value={formData.city}
                   onChange={(e) => {
-                    setFormData({ ...formData, username: e.target.value });
+                    setFormData({ ...formData, city: e.target.value });
                   }}
                 />
               </div>
@@ -99,9 +101,9 @@ function PersonalInfo({ formData, setFormData }) {
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input Zip code"
-                  value={formData.username}
+                  value={formData.zipcode}
                   onChange={(e) => {
-                    setFormData({ ...formData, username: e.target.value });
+                    setFormData({ ...formData, zipcode: e.target.value });
                   }}
                 />
               </div>
@@ -112,9 +114,9 @@ function PersonalInfo({ formData, setFormData }) {
                   size="28"
                   className="input-tag-signup"
                   placeholder="Input Tax Id Number"
-                  value={formData.username}
+                  value={formData.taxIdNumber}
                   onChange={(e) => {
-                    setFormData({ ...formData, username: e.target.value });
+                    setFormData({ ...formData, taxIdNumber: e.target.value });
                   }}
                 />
               </div>

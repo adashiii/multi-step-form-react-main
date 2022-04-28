@@ -15,6 +15,12 @@ function Form(props) {
     username: "",
     nationality: "",
     other: "",
+    brandName: "",
+    brandtype: "selectvalue",
+    streetaddress: "",
+    city: "",
+    zipcode: "",
+    taxIdNumber: "",
   });
 
   const FormTitles = ["Sign Up", "Personal Info"];
@@ -24,7 +30,7 @@ function Form(props) {
       return <SignUpInfo formData={formData} setFormData={setFormData} />;
     } else if (page === 1) {
       return <PersonalInfo formData={formData} setFormData={setFormData} />;
-    } 
+    }
     // else {
     //   return <OtherInfo formData={formData} setFormData={setFormData} />;
     // }
@@ -41,15 +47,20 @@ function Form(props) {
       </div> */}
       <div className="form-container">
         <div className="header-create-new-account-outer-div">
+          <div className="header-create-new-account">
+            <h2 className="header-create-new-account-h2">Create New Account</h2>
+            <button
+              className="header-create-new-account-button"
+              onClick={() => {
+                // setPage((currPage) => currPage - 1);
+                alert(`The Contact Us page is under construction...`);
+              }}
+            >
+              Contact Us
+            </button>
 
-        <div className="header-create-new-account">
-          <h2 className="header-create-new-account-h2">Create New Account</h2>
-          <button className="header-create-new-account-button">
-            Contact Us
-          </button>
-
-          {/* <h1>{FormTitles[page]}</h1> */}
-        </div>
+            {/* <h1>{FormTitles[page]}</h1> */}
+          </div>
         </div>
         <div className="body">{PageDisplay()}</div>
 
@@ -57,28 +68,45 @@ function Form(props) {
           <div className="footer">
             <button
               className="footer-back-to-login-button"
-              disabled={page === 0}
+              // disabled={page === 0}
               onClick={() => {
-                setPage((currPage) => currPage - 1);
+                // setPage((currPage) => currPage - 1);
+                alert(`The Login page is under construction...`);
               }}
             >
               &lt; Back to Login
             </button>
-            <button
-              className="footer-next-button"
-              onClick={() => {
-                // props.onFormYRSubmitHandler
-                if (page === FormTitles.length - 1) {
-                  alert("FORM SUBMITTED");
-                  console.log(formData);
-                } else {
-                  setPage((currPage) => currPage + 1);
-                }
-              }}
-            >
-              {page === FormTitles.length - 1 ? "Submit" : "Next"}
-              {/* {onFormSubmitHandler} */}
-            </button>
+
+            <div className="prev-next-button-div">
+              <button
+                // className="footer-prev-button"
+
+                disabled={page === 0}
+                onClick={() => {
+                  setPage((currPage) => currPage - 1);
+                }}
+              >
+                &lt; Previous Step
+              </button>
+              <button
+                className="footer-next-button"
+                onClick={() => {
+                  // props.onFormYRSubmitHandler
+                  if (page === FormTitles.length - 1) {
+                    alert(
+                      "Next page of Aditional Users is under construction..... "
+                    );
+                    console.log(formData);
+                  } else {
+                    setPage((currPage) => currPage + 1);
+                  }
+                }}
+              >
+                Next Step &gt;
+                {/* {page === FormTitles.length - 1 ? "Submit" : "Next Step"} */}
+                {/* {onFormSubmitHandler} */}
+              </button>
+            </div>
           </div>
         </div>
       </div>
